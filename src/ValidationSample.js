@@ -23,7 +23,7 @@ class ValidationSample extends Component {
 
     render() {
         return (
-            <div>
+            <>
                 <input
                     type="password"
                     value={this.state.password}
@@ -32,7 +32,7 @@ class ValidationSample extends Component {
                     ref={(ref) => this.input=ref}
                 />
                 <button onClick={this.handleButtonClick}>검증하기</button>
-            </div>
+            </>
         );
     }
 }
